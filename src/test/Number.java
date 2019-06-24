@@ -1,7 +1,5 @@
 package test;
 
-import java.lang.Integer;
-
 abstract class Number {
     int number;
     String type;
