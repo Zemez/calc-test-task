@@ -48,7 +48,5 @@ public class RomanNumber extends Number {
     }
 
     @Override
-    public String toString() {
-        return toRoman(number);
-    }
+    public String toString() { return toRoman(number); }
 }

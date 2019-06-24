@@ -10,4 +10,7 @@ class ArabicNumber extends Number {
         this.number = number;
         type = "arabic";
     }
+
+    @Override
+    public String toString() { return Integer.toString(number); }
 }
