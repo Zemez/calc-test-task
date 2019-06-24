@@ -20,8 +20,12 @@ public class RomanNumber extends Number {
     }
 
     RomanNumber(String number) {
-        this.number = toArabic(number);
-        type = "roman";
+        if (number.matches("^(X|IX|IV|V?I{0,3})$")) {
+            this.number = toArabic(number);
+            type = "roman";
+        } else {
+            throw new RuntimeException("Неверное число");
+        }
     }
 
     RomanNumber(int number) {
